@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>捏一会儿</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main id="widget">
+  <aside id="completion-bubble" role="status" aria-live="polite" hidden>
+    <button id="open-completion" aria-label="打开对应 Codex 对话" title="点击进入对应 Codex 对话">
+      <span class="completion-label">CODEX · 本轮已回复</span>
+      <strong id="completion-title"></strong>
+    </button>
+    <span id="completion-queue"></span>
+    <button id="dismiss-completion" aria-label="关闭任务提醒">×</button>
+  </aside>
+  <aside id="anger-bubble" role="status" aria-live="polite" hidden>我炸了 <span aria-label="生气">😡</span></aside>
+  <header aria-label="捏捏工具">
+    <button id="drag" title="拖动到喜欢的位置" aria-label="移动窗口"><svg viewBox="0 0 24 24"><path d="M5 9h14M5 15h14"/></svg></button>
+    <button id="swap" title="换一下" aria-label="换一下"><svg viewBox="0 0 24 24"><path d="M4 7h15m-4-4 4 4-4 4M20 17H5m4-4-4 4 4 4"/></svg></button>
+    <button id="reset" title="重置当前捏捏" aria-label="重置当前捏捏"><svg viewBox="0 0 24 24"><path d="M5 8a8 8 0 1 1-1 8M5 3v5h5"/></svg></button>
+    <button id="hide" title="收起到菜单栏" aria-label="收起"><svg viewBox="0 0 24 24"><path d="M6 12h12"/></svg></button>
+  </header>
+  <canvas id="surface" title="点按慢慢捏碎 · 长按 2 秒炸开" role="button" tabindex="0" aria-label="捏一下当前物体"></canvas>
+</main>
+<script src="bundle.js"></script>
+</body></html>

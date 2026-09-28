@@ -1,0 +1,10 @@
+.DS_Store
+build/
+artifacts/
+.runtime/
+.venv/
+__pycache__/
+*.pyc
+
+# 本机生成的项目连接配置含绝对路径
+.codex/hooks.json
